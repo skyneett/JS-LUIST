@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.carrusel-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #ffcc00; /* Color de fondo del carrusel */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carrusel-texto {
+    display: inline-block;
+    padding-left: 100%; /* Inicia el texto fuera de la pantalla */
+    animation: desplazar 60s linear infinite; /* Ajusta la duración según sea necesario */
+    font-size: 1.5em;
+    color: #333; /* Color del texto */
+}
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(0); /* Comienza desde la posición inicial */
+    }
+    100% {
+        transform: translateX(-50%); /* Desplaza solo el 50% del ancho del texto */
+    }
+}

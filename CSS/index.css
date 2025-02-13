@@ -1,0 +1,23 @@
+/* Estilos globales */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+iframe {
+    display: block; /* Asegura que los iframes se comporten como bloques */
+    border: none; /* Elimina el borde predeterminado */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina rellenos */
+}
+
+.separator {
+    text-align: center;
+    margin: 40px 0; /* Ajusta el margen según sea necesario */
+}
+
+.separator img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,80 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer */
+.footer {
+    background-color: #09548e; /* Fondo oscuro */
+    color: white;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo y frase */
+.footer-logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-logo .frase {
+    font-style: italic;
+    color: #ffcc00; /* Color dorado */
+    font-size: 1.1em;
+}
+
+/* Redes sociales */
+.footer-redes h3, .footer-contacto h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-redes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-redes ul li a {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.footer-redes ul li a:hover {
+    color: #ffcc00; /* Color dorado al pasar el mouse */
+}
+
+/* Contacto */
+.footer-contacto p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.footer-contacto i {
+    margin-right: 10px;
+    color: #ffcc00; /* Color dorado */
+}
+
+/* Copyright */
+.footer-copy {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: #aaa;
+}
