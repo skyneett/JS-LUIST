@@ -24,7 +24,7 @@ body, html {
     top: 0;
     left: 0;
     opacity: 0;
-    animation: cambiarDiapositivas 12s infinite; /* Duración total: 12s (4s por diapositiva) */
+    animation: cambiarDiapositivas 16s infinite; /* Duración total: 16s (4s por diapositiva) */
 }
 
 /* Estilos de la imagen */
@@ -59,9 +59,9 @@ body, html {
 /* Animación para cambiar diapositivas */
 @keyframes cambiarDiapositivas {
     0% { opacity: 0; }
-    10% { opacity: 1; } /* Mostrar diapositiva */
-    33.33% { opacity: 1; } /* Mantener visible */
-    43.33% { opacity: 0; } /* Ocultar diapositiva */
+    12.5% { opacity: 1; } /* Mostrar diapositiva */
+    37.5% { opacity: 1; } /* Mantener visible */
+    50% { opacity: 0; } /* Ocultar diapositiva */
     100% { opacity: 0; }
 }
 
@@ -74,4 +74,7 @@ body, html {
 }
 .diapositiva:nth-child(3) {
     animation-delay: 8s; /* Tercera diapositiva */
+}
+.diapositiva:nth-child(4) {
+    animation-delay: 12s; /* Cuarta diapositiva */
 }
