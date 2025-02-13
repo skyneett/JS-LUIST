@@ -26,11 +26,14 @@ body {
     margin: 20px;
     max-width: 300px;
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
+    position: relative;
+    overflow: hidden;
 }
 
 .card:hover {
     transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .card img {
@@ -49,6 +52,22 @@ body {
 .card p {
     padding: 0 15px 15px;
     color: #666;
+}
+
+.card span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.card:hover span {
+    opacity: 1;
 }
 
 .separator {
