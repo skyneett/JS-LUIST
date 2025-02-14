@@ -60,13 +60,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.2s;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     padding: 10px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .card:hover span {
